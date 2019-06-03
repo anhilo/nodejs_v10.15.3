@@ -697,6 +697,7 @@ bool Agent::Start(const std::string& path,
                               StartIoThreadAsyncCallback));
     uv_unref(reinterpret_cast<uv_handle_t*>(&start_io_thread_async));
     start_io_thread_async.data = this;
+    StartDebugSignalHandler();
   }
 
   bool wait_for_connect = options->wait_for_connect();

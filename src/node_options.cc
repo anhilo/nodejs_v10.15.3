@@ -49,7 +49,7 @@ namespace options_parser {
 // TODO(addaleax): Make that unnecessary.
 
 DebugOptionsParser::DebugOptionsParser() {
-  return;
+
 #if HAVE_INSPECTOR
   AddOption("--inspect-port",
             "set host:port for inspector",
